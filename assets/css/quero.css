@@ -1,0 +1,131 @@
+.quero{
+  width: 100%;
+  height: fit-content;
+  padding: 0.25rem;
+
+}
+
+  .quero__titulo{
+    width: 100%;
+    height:2.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .quero__intro{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .quero__form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: space-between;
+    
+  }
+
+    .quero__fieldset{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.1rem;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+      .quero__legend{
+        width: 100%;
+        font-size: 1.2rem;
+        margin-bottom: 0.1rem;
+      }
+
+      .quero__input{
+        width: 100%;
+        padding: 0.25rem;
+        height: 1.5rem;
+        color: var(--preto);
+
+        border: 1px solid var(--dourado);
+
+        box-shadow: 0px 0px 0.25rem rgb(174, 174, 174);
+        outline: none;
+
+        cursor: text;
+      }
+
+      .quero__input:focus{
+        background-color:rgb(220, 220, 220);
+      }
+
+      .quero__texto{
+        height: 10rem;
+        resize: none;
+      }
+
+    .quero__botoes{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+      .quero__enviar{
+        height:3rem;
+        outline: none;
+
+        cursor: pointer;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:left;
+
+        border: none;
+      }
+
+        .quero__whatsapp{
+          background-color:#00BB2D;
+          color: var(--branco);
+          background-image: url('../img/whatsapp-white.png');
+         
+
+          
+        }
+
+        .quero__email{
+          background-color:var(--preto);
+          color: var(--branco);
+          background-image: url('../img/email-white.png');
+         
+        }
+
+/* MOBILE */
+@media screen and (min-width:0){
+  .quero__form{
+    padding:0 1rem;
+  }
+
+  .quero__botoes{
+    flex-direction: column;
+  }
+
+  .quero__enviar{
+    width:100%;
+  }
+}/* MOBILE - FIM */
+/* 1024 */
+@media screen and (min-width:1024px){
+  .quero__form{
+    padding:0 10rem;
+  }
+
+  .quero__enviar{
+    width:30%;
+  }
+
+  .quero__botoes{
+    flex-direction: row;
+  }
+} /* 1024 - FIM*/

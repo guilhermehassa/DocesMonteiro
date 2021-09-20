@@ -1,0 +1,156 @@
+.header{
+  width: 100%;
+  height: var(--altura-header);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--dourado);
+  padding: 0.5rem;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  background-color: var(--preto);
+}
+
+.header__toggle{
+  width: 3rem;
+  height:100%;
+  background-image: url('../img/menu_icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+  .header__logo{
+    width: auto;
+  }
+
+  .header__nav{
+    height: 100%;
+  }
+    
+    .header__ul{
+      display: flex;
+      gap: 1rem;
+      height: 100%;
+      place-items: center;
+    }
+
+    .header__li{
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+  
+      .header__icon{
+        height: 1rem;
+        width: auto;
+      }
+    
+
+      
+      .header__texto{
+        color: var(--branco);
+      }
+
+      .header__li:hover .header__texto{
+        color: var(--dourado);
+        text-decoration: underline;
+      }
+      .header__info:hover .header__texto{
+        color: var(--branco);
+        text-decoration: none;
+      }
+
+/* MOBILE */
+@media screen and (min-width:0){
+  
+  .header__toggle{
+    display: block;
+    order: 3;
+  }
+
+  .header__ul{
+    width: 0px;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+
+    flex-direction: column;
+    width: 65%;
+
+    transition: 0.2s width;
+  }
+
+  .header__link{
+    width: 100%;
+    border-bottom: 1px dotted var(--dourado);
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  .header__ul-on{
+    opacity: 1;
+    position: fixed;
+    right: 0;
+    padding: 1rem;
+    margin-top: calc( var(--altura-header) - 0.5rem);
+    background-color: var(--preto);
+    border-left: 2px solid var(--dourado);
+
+    box-shadow: 0px 0px 0.5rem rgb(143, 143, 143);
+  
+  
+  }
+
+  .header__logo{
+    height: 200%;
+  }
+}/* MOBILE - FIM */
+
+
+/* TABLET */
+@media screen and (min-width: 769px){
+  
+}/* TABLET - FIM */
+
+
+/* 1024 */
+@media screen and (min-width: 1023px){
+  
+  
+  .header__toggle{
+    display: none;
+    width:3rem;
+  }
+
+  .header__ul{
+    width: fit-content;
+    overflow: auto;
+    opacity: 1;
+
+    flex-direction: row;
+  }
+
+  .header__link{
+    width: auto;
+    border-bottom: none;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  
+
+  .header__logo{
+    height: 250%;
+  }
+
+  
+}/* 1024 - FIM */
+
+
+/* 1200 */
+@media screen and (min-width: 1200px){
+  
+}/* 1200 - FIM */

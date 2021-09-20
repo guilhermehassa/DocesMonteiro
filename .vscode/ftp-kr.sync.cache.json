@@ -1,0 +1,31 @@
+{
+  "ftp://ftp.gh.tec.br:21@doces-monteiro@simple.tec.br": {
+    ".ftpquota": {
+      "type": "-",
+      "size": 12,
+      "lmtime": 0,
+      "modified": true
+    },
+    ".gitattributes": {
+      "type": "-",
+      "size": 66,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".htaccess": {
+      "type": "-",
+      "size": 287,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".well-known": {},
+    "assets": {},
+    "index.html": {
+      "type": "-",
+      "size": 12284,
+      "lmtime": 0,
+      "modified": true
+    }
+  },
+  "$version": 1
+}

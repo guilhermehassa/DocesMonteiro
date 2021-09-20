@@ -1,0 +1,47 @@
+:root{
+  --preto:rgb(0, 0, 0);
+  --dourado:rgb(240,177,17);
+  --branco:#fff;
+
+  --fonte-padrao:'Ubuntu', sans-serif;
+
+  --altura-header:4rem;
+}
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  border-spacing: unset;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-padrao);
+  height:auto;
+  min-height: 100vh;
+  background-color: rgb(255, 251, 236);
+}
+
+main{
+  width: 100%;
+  height: calc(100vh - var(--altura-header));
+
+  margin-top: var(--altura-header);
+
+  position: absolute;
+
+  overflow-y: scroll;
+  
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.scripts{
+  display: none;
+}

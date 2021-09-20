@@ -1,0 +1,119 @@
+.mostra-produto{
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: var(--altura-header);
+}
+
+.mostra-produto--off{
+  display: none;
+}
+
+  .mostra-produto__content{
+    width: 80%;
+    height: 95%;
+    display: flex;
+    
+    align-items: center; 
+    gap: 0.25rem;
+    background-color:var(--branco);
+
+    border-radius: 0.5rem;
+
+    overflow: hidden;
+    box-shadow: 0px 0px 0.5rem black;
+  }
+
+    .mostra-produto__img{
+      height: 100%;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      background-image: url('../img/logo.png');
+      
+    }
+
+    .mostra-produto__info{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      width: 100%;
+      height: 100%;
+      padding: 2rem;
+
+      
+      
+    }
+
+      .mostra-produto__titulo{
+        width: 100%;
+        font-size: 1.5rem;
+        color: var(--dourado);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .mostra-produto__texto{
+        width: 100%;
+        height: 5%;
+        vertical-align: middle;
+        font-size: 1.2rem;
+        text-align: justify;
+
+        color: var(--preto);
+        
+      }
+
+/* CELULAR */
+@media screen and (min-width: 0){
+  .mostra-produto__texto{
+    margin-bottom: 5%;
+  }
+
+  .mostra-produto__content{
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .mostra-produto__img{
+    flex-shrink: 1;
+  }
+
+  .mostra-produto__info{
+    flex-shrink: 3;
+  }
+} /* CELULAR - FIM*/
+
+/* 1024 */
+@media screen and (min-width: 1024px){
+  .mostra-produto__texto{
+    margin-bottom: 0%;
+  }
+
+  .mostra-produto__content{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mostra-produto__img{
+    flex-shrink: 2;
+  }
+
+  .mostra-produto__info{
+    flex-shrink: 3;
+  }
+} /* 1024 - FIM*/
